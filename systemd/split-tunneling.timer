@@ -1,0 +1,12 @@
+[Unit]
+Description=Run split-tunneling.service daily at 05:00 Europe/Moscow
+Documentation=https://www.freedesktop.org/software/systemd/man/systemd.timer.html
+
+[Timer]
+OnCalendar=*-*-* 05:00:00 Europe/Moscow
+Persistent=true
+AccuracySec=1min
+Unit=split-tunneling.service
+
+[Install]
+WantedBy=timers.target

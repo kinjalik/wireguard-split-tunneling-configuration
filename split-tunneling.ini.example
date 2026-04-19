@@ -1,0 +1,5 @@
+# Install as /etc/split-tunneling/split-tunneling.ini — key=value per line, optional # comments.
+# Used by update-cidrs-in-route-table.py for routing_table and egress_dev only.
+
+routing_table=wireguard2x
+egress_dev=eth0

@@ -1,0 +1,9 @@
+# Install as /etc/split-tunneling/creds with mode 600 (secrets).
+# Referenced by split-tunneling.service (get-iana-cidrs + diff-and-report-tg).
+# Override DEBUG on update-cidrs via drop-in Environment=DEBUG=1 if needed.
+#
+# Repo split-tunneling.ini.example → /etc/split-tunneling/split-tunneling.ini (routing_table, egress_dev for update-cidrs).
+
+IPINFO_TOKEN=
+TELEGRAM_BOT_TOKEN=
+TELEGRAM_CHAT_ID=

@@ -1,0 +1,13 @@
+[Unit]
+Description=RIPE+IPinfo download, Telegram diff, apply policy routes
+Documentation=file:///usr/local/bin/get-iana-cidrs.py
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+# Secrets: systemd/creds.example → /etc/split-tunneling/creds (chmod 600)
+EnvironmentFile=-/etc/split-tunneling/creds
+ExecStart=/usr/local/bin/get-iana-cidrs.py
+ExecStartPost=/usr/local/bin/diff-and-report-tg.py
+ExecStartPost=/usr/local/bin/update-cidrs-in-route-table.py

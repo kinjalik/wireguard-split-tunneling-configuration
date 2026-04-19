@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.env
+.env.*
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+pip-log.txt
+
+# Test / type / coverage
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor (uncomment if you do not want to share)
+# .idea/
+# .vscode/
+
+# Local config (use split-tunneling.ini.example; do not commit real creds)
+creds
+split-tunneling.ini
+
+# Optional: local state if you copy data into the repo
+raw-list
+effective-list
+rich-list.csv
+rich-list.csv.old
